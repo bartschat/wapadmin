@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>  
+  <card id="start" title="wap administration">
+    <p align="center">
+      <img src="./images/logo.wbmp" align="top" alt="logo" height="40" width="24" />
+    </p>
+<p align="center"><a href="./login.php">Enter!</a></p>
+  </card>
+</wml>  

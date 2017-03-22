@@ -1,0 +1,18 @@
+Installation of  wap administration is very simple! :)
+
+Just copy the files into a directory which is accessible through 
+your webserver. 
+
+Try to get http://your.server/your/dir/index.wml
+
+Now you have to create a database on your mysql server and import the 
+file wapadmin.sql into it. This can easily be done with phpmyadmin or 
+with the mysql console client: 
+
+  mysql -u wapadmin -p -h localhost wapadmin < ./sql/wapadmin.sql
+
+After doing this you can log on to wapadmin with username and 
+password 'admin'. :)
+User management will be added soon. 
+
+Last thing to do is to edit config.php to fit to your needs...
