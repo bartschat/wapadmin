@@ -1,0 +1,92 @@
+# ATTENTION 
+
+This repository contains the archive of a project I did back in 2004 
+just for archiving purposes! :)
+
+# ATTENTION
+
+This is pre release so DO NOT USE ON IMPORTANT SYSTEMS!
+
+
+Welcome to wapadmin - administration via wap! 
+
+
+1. What is wapadmin intended to be?
+
+The idea to write some kind of wap interface to a linux box 
+came into my mind some time ago but I started realising it when
+O2 germany introduced their wap flatrate in autumn 2003. 
+wapadmin is intended to make it possible for any admin or user 
+of a linux or *nix box to accomplish certain tasks from every place 
+where any usable gsm network is available. 
+The following items are planned to be implemented:
+	
+	- check your server's stats, eg load, logged in users
+	- check your network, eg ping and traceroute some hosts 
+	  perform whois queries and query your nameserver via 
+	  nslookup
+	- interface to the ftpd, eg check logged in users or 
+	  transfer statistics
+	- interface to user administration, eg lock or unlock 
+	  an user's account or create and delete accounts
+	- interface to an iptables script, to open some ports for 
+	  ip-adresses or subnets, for example to grant some user 
+	  access to the ftp service or the ssh port.
+
+All theses tasks will be performed by a wml interface designed to fit 
+on most mobile phones' displays. 
+
+2. How do I install and configure wapadmin
+
+Installing wapdmin is a very easy task if your web server, most commonly 
+the apache httpd, is already set up for delivering wml pages. If this  
+has not been done yet, please refer to some docs you can find on the net. 
+This topic will be covered in this README in a future release. 
+To install wapadmin just extract the wapadmin-x.xx.tar.gz file you 
+downloaded into a directory which is accessible by your webserver, for 
+example /var/www/wapadmin. 
+
+To configure wapadmin just edit the config.php file you will find in 
+the installation directory. The file is self explaining but some comments 
+will be added soon, to make the setup a little bit easier. 
+
+3. Is wapadmin secure? 
+
+I do not think that any service that can be accessed via a web gui is 
+really secure. Of course security can be enhanced a lot by the use of 
+ssl certificates and thus the transport of your data via the https 
+protocol but I don't know yet if it's possible to create a secure line 
+between your service provider's wap gateway and the wapadmin host. 
+All the traffic between your cell phone and your provider's gateway is 
+encrypted as described in the gsm protocol specs, but I do not 
+think it is a reliable encryption of valuable data. 
+I also have to admin, that variables are not checked, so there could 
+possibly buffer overflows or one could just pass arguments to external 
+programs used by wapadmin. 
+
+So I do not recommend to set up wapadmin on important servers! 
+
+Security is not important for me, because this is just a freetime project 
+I do for fun. :)
+
+4. Where can I find a new version of wapadmin?
+
+The wapadmin project homepage is located on: 
+
+http://sourceforge.net/projects/wapadmin
+
+5. Who is the author of wapadmin and how can I contact him? 
+
+Have a look at: www.alles-am-en.de (german web site)
+
+Contact via eMail: wapadmin@alles-am-en.de (english or german)
+
+6. Thanks... 
+
+Thanks go to: 
+
+SourceForge for hosting my crappy little piece of code! :)
+
+Andres Bravalle for his excellent PHP and WML tutorial published on www.phpbuilder.com
+  -->> http://www.phpbuilder.com/columns/baravalle20010221.php3
+
